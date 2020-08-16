@@ -157,6 +157,7 @@ function loadToDos() {
             li.appendChild(checkBtn);
             li.id = item.id;
             pendingList.appendChild(li);
+
             delBtn.addEventListener("click", deleteBtn);
             checkBtn.addEventListener("click", paintFinish);
       });

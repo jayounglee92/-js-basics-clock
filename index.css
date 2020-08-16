@@ -1,5 +1,45 @@
+body {
+  background-size: cover;
+  background-position: center center;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+h1{
+  font-size: 5em;
+}
+h4{
+  font-size: 2em;
+}
+h2{
+  font-size: 1em;
+}
+
+input {
+  background: none;
+  appearance: none;
+  border: 0;
+  font-size: 22px;
+  color: white;
+  border-bottom: 2px solid white;
+}
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
 .btn {
   cursor: pointer;
+  display: contents;
 }
 
 .clicked {
@@ -24,6 +64,10 @@
   }
 }
 
+ul li button{
+  display: contents;
+  cursor: pointer;
+}
 .bgImage {
   position: absolute;
   top: 0;
@@ -40,4 +84,27 @@
 
 .numberGuess {
   width: 40px;
+}
+
+.weather {
+  position: absolute;
+  font-style: italic;
+  font-size: 12px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.location {
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in;
+  font-style: italic;
+  font-size: 12px;
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+
+.location:hover {
+  opacity: 1;
 }
